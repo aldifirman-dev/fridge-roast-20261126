@@ -3,6 +3,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 
 const entry = "Your fridge has condiments older than some of your friendships — and honestly, the ketchup has seen things.";
 
+// The competition caps entries at 200 characters.
 if (
   [...entry].length < 1 ||
   [...entry].length > 200 ||
